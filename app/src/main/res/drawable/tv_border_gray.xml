@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="1dp" android:color="#DBE2ED" />
+            <solid android:color="@color/white_50" />
+            <!--            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />-->
+            <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
+            <corners android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" android:topLeftRadius="10dp" android:topRightRadius="10dp" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <stroke android:width="1dp" android:color="#DBE2ED" />
+            <solid android:color="@color/white_50" />
+            <!--            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />-->
+            <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
+            <corners android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" android:topLeftRadius="10dp" android:topRightRadius="10dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="1dp" android:color="#DBE2ED" />
+            <solid android:color="@color/gray" />
+            <padding android:bottom="5dp" android:left="5dp" android:right="5dp" android:top="5dp" />
+            <corners android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" android:topLeftRadius="5dp" android:topRightRadius="5dp" />
+        </shape>
+    </item>
+
+</selector>

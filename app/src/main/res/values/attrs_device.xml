@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="DeviceComponent">
+        <attr name="icon" format="reference" />
+        <attr name="state" format="boolean" />
+        <attr name="name" format="string" />
+        <attr name="count" format="string" />
+        <attr name="number" format="integer" />
+    </declare-styleable>
+</resources>

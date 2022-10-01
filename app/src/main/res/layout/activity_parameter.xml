@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_param"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main"
+    android:paddingLeft="@dimen/space_tiny_10"
+    android:paddingTop="@dimen/space_tiny_10"
+    android:paddingRight="@dimen/space_tiny_10"
+    android:paddingBottom="@dimen/space_tiny_10"
+    tools:context=".ParameterActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height_38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_tiny_6"
+            android:layout_marginEnd="@dimen/space_tiny_6"
+            android:layout_toStartOf="@+id/tv_time"
+
+            android:layout_toEndOf="@+id/img_back"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time_ap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:layout_alignParentEnd="true"
+
+            android:textColor="@color/black_50"
+            android:textSize="@dimen/text_size_10"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_device_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_50"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_top" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:text="@string/cabinet_params"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_device_location" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/space_tiny_6"
+        android:layout_marginBottom="@dimen/space_tiny_6"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/bt_accept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_power_consumption"
+                    android:text="@string/power_consumption_kwh" />
+
+                <EditText
+                    android:id="@+id/et_power_consumption"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlU1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_vol_1"
+                    android:text="@string/voltage_u1_v" />
+
+                <EditText
+                    android:id="@+id/et_vol_1"
+                    style="@style/ParamEditText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlU2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_vol_2"
+                    android:text="@string/voltage_u2_v" />
+
+                <EditText
+                    android:id="@+id/et_vol_2"
+                    style="@style/ParamEditText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlU3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_vol_3"
+                    android:text="@string/voltage_u3_v" />
+
+                <EditText
+                    android:id="@+id/et_vol_3"
+                    style="@style/ParamEditText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlI1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_current_1"
+                    android:text="@string/current_i1_a" />
+
+                <EditText
+                    android:id="@+id/et_current_1"
+                    style="@style/ParamEditText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlI2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_current_2"
+                    android:text="@string/current_i2_a" />
+
+                <EditText
+                    android:id="@+id/et_current_2"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlI3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_current_3"
+                    android:text="@string/current_i3_a" />
+
+                <EditText
+                    android:id="@+id/et_current_3"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_branch_current_1"
+                    android:text="@string/branch_current_i1_a" />
+
+                <EditText
+                    android:id="@+id/et_branch_current_1"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_branch_current_2"
+                    android:text="@string/branch_current_i2_a" />
+
+                <EditText
+                    android:id="@+id/et_branch_current_2"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_branch_current_3"
+                    android:text="@string/branch_current_i3_a" />
+
+                <EditText
+                    android:id="@+id/et_branch_current_3"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_leakage_current_total"
+                    android:text="@string/leakage_current_total" />
+
+                <EditText
+                    android:id="@+id/et_leakage_current_total"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_leakage_current_1"
+                    android:text="@string/leakage_current_01" />
+
+                <EditText
+                    android:id="@+id/et_leakage_current_1"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_leakage_current_2"
+                    android:text="@string/leakage_current_02" />
+
+                <EditText
+                    android:id="@+id/et_leakage_current_2"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ParamLabel"
+                    android:layout_toStartOf="@+id/et_leakage_current_3"
+                    android:text="@string/leakage_current_03" />
+
+                <EditText
+                    android:id="@+id/et_leakage_current_3"
+                    style="@style/ParamEditText" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_accept"
+        style="@style/ButtonSmall"
+        android:text="@string/accept"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

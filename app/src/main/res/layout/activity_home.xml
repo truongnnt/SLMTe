@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/ic_main"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/space_tiny_10"
+    android:paddingTop="@dimen/space_tiny_10"
+    android:paddingRight="@dimen/space_tiny_10"
+    android:paddingBottom="@dimen/space_tiny_10"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_tiny_3"
+            android:layout_toStartOf="@+id/time"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:textColor="@color/black_50"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_ap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_alignParentEnd="true"
+
+            android:textColor="@color/black_50"
+            android:textSize="@dimen/text_size_10"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_sys_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/system_info_height"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="@dimen/space_tiny_3"
+        android:background="@drawable/edittext_border"
+        android:paddingStart="@dimen/space_tiny_6"
+        android:paddingEnd="@dimen/space_tiny_6">
+
+        <TextView
+            android:id="@+id/tv_sys_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:text="@string/tv_sys_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sys_info"
+            android:orientation="horizontal"
+
+            tools:ignore="RtlSymmetry">
+
+            <vn.truongnnt.atmpro.trafficlight.ui.component.SystemInfoComponent
+                android:id="@+id/sys_info_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                app:desc="@string/sys_normal"
+
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <vn.truongnnt.atmpro.trafficlight.ui.component.SystemInfoComponent
+                android:id="@+id/sys_info_trouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                app:desc="@string/sys_trouble"
+                app:descColor="@color/red"
+
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <vn.truongnnt.atmpro.trafficlight.ui.component.SystemInfoComponent
+                android:id="@+id/sys_info_maintenance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                app:desc="@string/sys_maintenance"
+                app:descColor="@color/yellow" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ic_light"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_intersection"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_label_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_sys_info"
+        android:layout_marginTop="@dimen/space_tiny_6">
+
+        <TextView
+            android:id="@+id/tv_manage_sys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/tv_all"
+            android:text="@string/tv_manage_sys"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/tv_all"
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_label_manage"
+        android:layout_marginTop="@dimen/space_tiny_3"
+        android:orientation="horizontal">
+
+        <vn.truongnnt.atmpro.trafficlight.ui.component.DeviceComponent
+            android:id="@+id/dv_cabinet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:clickable="true"
+            android:focusable="true"
+            app:count="@string/tv_device_cabin_count"
+            app:icon="@drawable/ic_cabinet"
+            app:name="@string/tv_device_cabin_name"
+            app:state="true" />
+
+        <Space
+            android:layout_width="@dimen/space_tiny_10"
+            android:layout_height="match_parent" />
+
+        <vn.truongnnt.atmpro.trafficlight.ui.component.DeviceComponent
+            android:id="@+id/dv_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:clickable="true"
+            android:focusable="true"
+            app:count="@string/tv_device_cabin_count"
+            app:icon="@drawable/ic_icon_light"
+            app:name="@string/tv_device_light_name"
+            app:state="false" />
+
+        <Space
+            android:layout_width="@dimen/space_tiny_10"
+            android:layout_height="match_parent" />
+
+        <vn.truongnnt.atmpro.trafficlight.ui.component.DeviceComponent
+            android:id="@+id/dv_pole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:clickable="true"
+            android:focusable="true"
+            app:count="@string/tv_device_cabin_count"
+            app:icon="@drawable/ic_icon_pole"
+            app:name="@string/tv_device_pole_name"
+            app:state="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_list_device_maintain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_group"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/space_tiny_6"
+        android:layout_marginBottom="@dimen/space_tiny_6"
+        android:text="@string/tv_list_maintain"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/column_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_list_device_maintain"
+        android:background="@drawable/bg_tbl_col">
+
+        <TextView
+            android:layout_width="@dimen/tbl_width_30"
+            android:layout_height="match_parent"
+            android:text="@string/tbl_col_id"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tbl_device_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:paddingStart="@dimen/space_15"
+            android:text="@string/tbl_col_cabinet_id"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="normal"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="@dimen/tbl_width_92"
+            android:layout_height="match_parent"
+            android:text="@string/tbl_col_time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="@dimen/tbl_width_40"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/tbl_col_sel"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="normal" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_maintain"
+        android:layout_below="@+id/column_name"
+        android:layout_marginBottom="@dimen/space_tiny_6"
+        android:scrollbars="none">
+
+        <TableLayout
+            android:id="@+id/tbl_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_tiny_6"
+            android:background="@drawable/edittext_border"
+            android:padding="0dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_maintain"
+        style="@style/ButtonSmall"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bt_maintenance" />
+</RelativeLayout>

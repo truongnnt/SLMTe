@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_50">#33FFFFFF</color>
+
+    <color name="colorPrimary">#FF3700B3</color>
+    <color name="bt_text">@color/white</color>
+    <color name="main_blue">#1A8DFF</color>
+    <color name="main_blue_50">#331A8DFF</color>
+    <color name="main_blue_light">#E61A8DFF</color>
+    <color name="blue_strong">#4C57F9</color>
+
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+
+    <color name="green">#28AF6F</color>
+    <color name="red">#F40D0D</color>
+    <color name="yellow">#FAD02C</color>
+
+    <color name="gray">#F2F2F2</color>
+    <color name="tv_click">#DBE2ED</color>
+</resources>

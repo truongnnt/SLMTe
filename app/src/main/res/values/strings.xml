@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">SLMte</string>
+    <string name="website">www.atm.com.vn</string>
+    <string name="sign_in">Sign In</string>
+    <string name="arrow">Arrow</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="msg_invalid_full_name">Full name is invalid</string>
+    <string name="msg_invalid_email">Email is invalid</string>
+    <string name="msg_invalid_phone">Phone number is invalid</string>
+    <string name="msg_invalid_password">Password is invalid</string>
+    <string name="msg_not_match_password">Confirm password does not match</string>
+    <string name="msg_login_fail">Login failed</string>
+    <string name="msg_unkown_error">Unknown error</string>
+
+    <string name="msg_new_account_success">You have successfully created your account</string>
+    <string name="msg_not_found_device_info">Not found device info</string>
+    <string name="msg_storage_screenshot">Storage screenshot at</string>
+
+    <string name="tv_sys_info">System information</string>
+    <string name="tv_manage_sys">Manage system</string>
+    <string name="tv_all"><u>Scan QR</u></string>
+    <string name="loading">Loading…</string>
+
+    <string name="sys_normal">Normal</string>
+    <string name="sys_trouble">Trouble</string>
+    <string name="sys_maintenance">Maintenance</string>
+
+
+    <string name="tv_device_cabin_name">Cabinet</string>
+    <string name="tv_device_cabin_count">Count</string>
+    <!--    <string name="tv_device_light_count">Count</string>-->
+    <string name="tv_device_light_name">Light</string>
+    <string name="tv_device_pole_name">Pole</string>
+    <!--    <string name="tv_device_pole_count">Count</string>-->
+    <string name="tv_list_maintain">Maintenance list</string>
+    <string name="bt_maintenance">OK</string>
+
+    <string name="tbl_col_id">No.</string>
+    <string name="tbl_col_cabinet_id">Cabinet ID</string>
+    <string name="tbl_col_light_id">Lighting Cabinet ID</string>
+    <string name="tbl_col_time">Time</string>
+    <string name="tbl_col_sel">Sel</string>
+    <string name="tbl_col_device_name">Device Name</string>
+    <string name="tbl_col_warranty_dt">Warranty</string>
+    <string name="tbl_col_fail_sel">Err</string>
+    <string name="tbl_col_led">LED</string>
+    <string name="insurance">Ins</string>
+    <string name="replace_new">Rep</string>
+    <string name="repair">Fix</string>
+
+
+    <string name="todo">TODO</string>
+    <string name="cabinet_devices">Cabinet devices</string>
+    <string name="cabinet_params">Cabinet parameters</string>
+    <string name="cabinet_supply">Cabinet supplies</string>
+    <string name="light_devices">Light devices</string>
+    <string name="light_supply">Light supplies</string>
+    <string name="accept">Accept</string>
+    <string name="save_print">Save/Print</string>
+    <string name="finish">Finish</string>
+    <string name="please_select_device">Please select device</string>
+    <string name="voltage_u1_v">Voltage U1 (V)</string>
+    <string name="voltage_u2_v">Voltage U2 (V)</string>
+    <string name="voltage_u3_v">Voltage U3 (V)</string>
+    <string name="current_i1_a">Current I1 (A)</string>
+    <string name="current_i2_a">Current I2 (A)</string>
+    <string name="current_i3_a">Current I3 (A)</string>
+    <string name="branch_current_i1_a">Branch Current 01 (A)</string>
+    <string name="branch_current_i2_a">Branch Current 02 (A)</string>
+    <string name="branch_current_i3_a">Branch Current 03 (A)</string>
+    <string name="leakage_current_total">Main Leakage Current (A)</string>
+    <string name="leakage_current_01">Leakage Current 01 (A)</string>
+    <string name="leakage_current_02">Leakage Current 02 (A)</string>
+    <string name="leakage_current_03">Leakage Current 03 (A)</string>
+    <string name="power_consumption_kwh">Power Consumption (kWh)</string>
+
+    <string name="material_summary_sheet">Material summary sheet</string>
+    <string name="note">Note</string>
+
+    <string name="invalid_qr">QR Code is invalid</string>
+    <string name="id_city">Province/City</string>
+    <string name="id_district">District</string>
+    <string name="id_street">Street</string>
+    <string name="trial_expired">Trial has expired</string>
+    <string name="add_new_device">Add new cabinet</string>
+    <string name="add_new_device_success">Add cabinet is successfully</string>
+    <string name="err_not_found">Not found</string>
+    <string name="err_conflict">Has exist</string>
+    <string name="err_server">Internal server error</string>
+    <string name="err_bidden">Request denied</string>
+    <string name="err_unauthorize">The session has ended</string>
+
+    <!--    <string name="device_name_demo">BDU 192.168.0.1 Hồ Chí Minh</string>-->
+    <!--    <string name="location_demo">Tân Bình, Hồ Chí Minh</string>-->
+    <!--    <string name="full_name_demo">Nguyễn Văn A</string>-->
+    <!--    <string name="time_demo">10:30</string>-->
+    <!--    <string name="time_ap_demo">AM</string>-->
+</resources>

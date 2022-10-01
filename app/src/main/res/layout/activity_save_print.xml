@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_SavePrint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main"
+    android:paddingLeft="@dimen/space_tiny_10"
+    android:paddingTop="@dimen/space_tiny_10"
+    android:paddingRight="@dimen/space_tiny_10"
+    android:paddingBottom="@dimen/space_tiny_10"
+    tools:context=".SavePrintActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height_38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/space_tiny_6"
+            android:layout_marginEnd="@dimen/space_tiny_6"
+            android:layout_toStartOf="@+id/tv_time"
+
+            android:layout_toEndOf="@+id/img_back"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_top">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/tv_date"
+            android:textColor="@color/black_50"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/space_tiny_10"
+        android:layout_marginBottom="@dimen/space_tiny_10"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bt_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_user_info">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/material_summary_sheet"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TableRow
+            android:id="@+id/tbl_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/bg_tbl_col"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2">
+
+            <TextView
+                android:layout_width="@dimen/tbl_width_30"
+                android:layout_height="match_parent"
+                android:text="@string/tbl_col_id"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_col_led"
+                android:layout_width="@dimen/tbl_width_40"
+                android:layout_height="match_parent"
+                android:text="@string/tbl_col_led"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:paddingStart="@dimen/space_15"
+                android:text="@string/tbl_col_device_name"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="normal"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="@dimen/tbl_width_50"
+                android:layout_height="match_parent"
+                android:text="@string/replace_new"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="@dimen/tbl_width_50"
+                android:layout_height="match_parent"
+                android:text="@string/repair"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="normal" />
+        </TableRow>
+
+        <ScrollView
+            android:id="@+id/scroll_tbl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginBottom="@dimen/space_tiny_10"
+            android:layout_weight="7"
+            android:scrollbars="none">
+
+            <TableLayout
+                android:id="@+id/tbl_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="0dp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/note"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="@dimen/space_tiny_6"
+            android:layout_weight="3"
+            android:autofillHints="@string/note"
+            android:background="@drawable/edittext_border"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:labelFor="@id/et_note"
+
+            android:padding="@dimen/space_tiny_6"
+            android:scrollbars="none"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_finish"
+        style="@style/ButtonSmall"
+        android:text="@string/finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

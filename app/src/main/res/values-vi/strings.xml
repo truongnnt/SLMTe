@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <string name="app_name">SLMte</string>-->
+    <!--    <string name="website">www.atm.com.vn</string>-->
+    <!--    <string name="sign_in">Đăng Nhập</string>-->
+    <!--    <string name="arrow">Mũi tên</string>-->
+    <!--    <string name="hint_full_name">Họ tên</string>-->
+    <!--    <string name="hint_email">Email</string>-->
+    <!--    <string name="hint_password">Mật khẩu</string>-->
+    <!--    <string name="forgot_password">Quên mật khẩu?</string>-->
+    <!--    <string name="create_account">Tạo Tài Khoản</string>-->
+
+    <!--    <string name="msg_invalid_full_name">Họ tên không hợp lệ</string>-->
+    <!--    <string name="msg_invalid_email">Email không hợp lệ</string>-->
+    <!--    <string name="msg_invalid_password">Mật khẩu không hợp lệ</string>-->
+
+    <!--    <string name="msg_new_account_success">Bạn đã tạo tài khoản thành công</string>-->
+    <!--    <string name="msg_not_found_device_info">Không tìm thấy thông tin thiết bị</string>-->
+    <!--    <string name="msg_storage_screenshot">Lưu ảnh chụp màn hình </string>-->
+
+    <!--    <string name="tv_sys_info">Thông tin hệ thống</string>-->
+    <!--    <string name="tv_manage_sys">Quản trị hệ thống</string>-->
+    <!--    <string name="tv_all">Tất cả</string>-->
+    <!--    <string name="loading">Đang tải…</string>-->
+
+    <!--    <string name="tv_device_cabin_name">Tủ</string>-->
+    <!--    <string name="tv_device_cabin_count">Số lượng</string>-->
+    <!--    &lt;!&ndash;    <string name="tv_device_light_count">Count</string>&ndash;&gt;-->
+    <!--    <string name="tv_device_light_name">Đèn</string>-->
+    <!--    <string name="tv_device_pole_name">Trụ</string>-->
+    <!--    &lt;!&ndash;    <string name="tv_device_pole_count">Count</string>&ndash;&gt;-->
+    <!--    <string name="tv_list_maintain">Danh sách bảo trì</string>-->
+    <!--    <string name="bt_maintenance">Tiếp tục</string>-->
+
+    <!--    <string name="tbl_col_id">STT</string>-->
+    <!--    <string name="tbl_col_device">ID tủ</string>-->
+    <!--    <string name="tbl_col_time">Thời gian</string>-->
+    <!--    <string name="tbl_col_sel">Chọn</string>-->
+    <!--    <string name="tbl_col_device_name">Tên thiết bị</string>-->
+    <!--    <string name="tbl_col_warranty_dt">Bảo hành</string>-->
+    <!--    <string name="tbl_col_fail_sel">Lỗi</string>-->
+
+    <!--    <string name="todo">TODO</string>-->
+    <!--    <string name="cabinet_devices">Thiết bị tủ</string>-->
+    <!--    <string name="cabinet_params">Thông số tủ</string>-->
+    <!--    <string name="cabinet_supply">Danh sách thiết bị tủ</string>-->
+    <!--    <string name="light_devices">Thiết bị đèn</string>-->
+    <!--    <string name="light_supply">Danh sách thiết bị đèn</string>-->
+    <!--    <string name="accept">Tiếp tục</string>-->
+    <!--    <string name="save_print">Lưu/In</string>-->
+    <!--    <string name="finish">Kết thúc</string>-->
+    <!--    <string name="please_select_device">Hãy chọn thiết bị</string>-->
+    <!--    <string name="voltage_u1_v">Điện áp U1 (V)</string>-->
+    <!--    <string name="voltage_u2_v">Điện áp U2 (V)</string>-->
+    <!--    <string name="voltage_u3_v">Điện áp U3 (V)</string>-->
+
+    <!--    <string name="current_i1_a">Dòng điện I1 (A)</string>-->
+    <!--    <string name="current_i2_a">Dòng điện I2 (A)</string>-->
+    <!--    <string name="current_i3_a">Dòng điện I3 (A)</string>-->
+
+    <!--    <string name="branch_current_i1_a">Dòng nhánh 01 (A)</string>-->
+    <!--    <string name="branch_current_i2_a">Dòng nhánh 02 (A)</string>-->
+    <!--    <string name="branch_current_i3_a">Dòng nhánh 03 (A)</string>-->
+    <!--    <string name="insurance">BH</string>-->
+    <!--    <string name="replace_new">TT</string>-->
+    <!--    <string name="replace_new_full">Sửa</string>-->
+    <!--    <string name="repair">Sửa</string>-->
+    <!--    <string name="material_summary_sheet">Phiếu tổng hợp vật tư</string>-->
+    <!--    <string name="note">Ghi chú</string>-->
+    <!--    <string name="leakage_current_total">Dòng rò tổng (A)</string>-->
+    <!--    <string name="leakage_current_01">Dòng rò 01 (A)</string>-->
+    <!--    <string name="leakage_current_02">Dòng rò 02 (A)</string>-->
+    <!--    <string name="leakage_current_03">Dòng rò 03 (A)</string>-->
+    <!--    <string name="tbl_col_led">LED</string>-->
+    <!--    <string name="power_consumption_kwh">Công suất tiêu thụ (kWh)</string>-->
+
+    <!--    <string name="device_name_demo">BDU 192.168.0.1 Hồ Chí Minh</string>-->
+    <!--    <string name="location_demo">Tân Bình, Hồ Chí Minh</string>-->
+    <!--    <string name="full_name_demo">Nguyễn Văn A</string>-->
+    <!--    <string name="time_demo">10:30</string>-->
+    <!--    <string name="time_ap_demo">AM</string>-->
+
+    <string name="app_name">SLMte</string>
+    <string name="website">www.atm.com.vn</string>
+    <string name="sign_in">Sign In</string>
+    <string name="arrow">Arrow</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="msg_invalid_full_name">Tên không phù hợp</string>
+    <string name="msg_invalid_email">Email không phù hợp</string>
+    <string name="msg_invalid_password">Mật mã không đúng</string>
+
+    <string name="msg_new_account_success">You have successfully created your account</string>
+    <string name="msg_not_found_device_info">Not found device info</string>
+    <string name="msg_storage_screenshot">Storage screenshot at</string>
+
+    <string name="tv_sys_info">Thông tin hệ thống</string>
+    <string name="tv_manage_sys">Quản lý thiết bị</string>
+    <string name="tv_all"><u>Quét QR</u></string>
+    <string name="loading">Loading…</string>
+
+    <string name="sys_normal">Bình Thường</string>
+    <string name="sys_trouble">Sự Cố</string>
+    <string name="sys_maintenance">Bảo Trì</string>
+
+    <string name="tv_device_cabin_name">Tủ ĐKCS</string>
+    <string name="tv_device_cabin_count">Tổng</string>
+    <!--    <string name="tv_device_light_count">Tổng</string>-->
+    <string name="tv_device_light_name">Bóng LED</string>
+    <string name="tv_device_pole_name">Trụ đèn</string>
+    <!--    <string name="tv_device_pole_count">Tổng</string>-->
+    <string name="tv_list_maintain">Danh sách bảo trì</string>
+    <string name="bt_maintenance">Chọn</string>
+
+    <string name="tbl_col_id">STT</string>
+    <string name="tbl_col_cabinet_id">Mã số tủ ĐK</string>
+    <string name="tbl_col_light_id">ID Tủ Chiếu Sáng</string>
+    <string name="tbl_col_time">Thời điểm</string>
+    <string name="tbl_col_sel">Chọn</string>
+    <string name="tbl_col_device_name">Tên thiết bị</string>
+    <string name="tbl_col_warranty_dt">Bảo hành</string>
+    <string name="tbl_col_fail_sel">Lỗi</string>
+
+
+    <string name="todo">TODO</string>
+    <string name="cabinet_devices">Cabinet devices</string>
+    <string name="cabinet_params">Cabinet parameters</string>
+    <string name="cabinet_supply">Cabinet supplies</string>
+    <string name="light_devices">Light devices</string>
+    <string name="light_supply">Light supplies</string>
+    <string name="accept">Xác Nhận</string>
+    <string name="save_print">Lưu/In</string>
+    <string name="finish">Kết Thúc</string>
+    <string name="please_select_device">Please select device</string>
+    <string name="voltage_u1_v">Điện áp U1(V)</string>
+    <string name="voltage_u2_v">Điện áp U2(V)</string>
+    <string name="voltage_u3_v">Điện áp U3(V)</string>
+
+    <string name="current_i1_a">Dòng điện I1(A)</string>
+    <string name="current_i2_a">Dòng điện I2(A)</string>
+    <string name="current_i3_a">Dòng điện I3(A)</string>
+
+    <string name="branch_current_i1_a">Dòng nhánh 01(A)</string>
+    <string name="branch_current_i2_a">Dòng nhánh 02(A)</string>
+    <string name="branch_current_i3_a">Dòng nhánh 03(A)</string>
+    <string name="insurance">BH</string>
+    <string name="replace_new">TT</string>
+    <string name="repair">SC</string>
+    <string name="material_summary_sheet">Danh sách thiết bị</string>
+    <string name="note">Chi tiết</string>
+    <string name="leakage_current_total">Dòng rò tổng(A)</string>
+    <string name="leakage_current_01">Dòng rò N01(A)</string>
+    <string name="leakage_current_02">Dòng rò N02(A)</string>
+    <string name="leakage_current_03">Dòng rò N03(A)</string>
+    <string name="tbl_col_led">LED</string>
+    <string name="power_consumption_kwh">Chỉ số điện kế (kWh)</string>
+    <string name="msg_login_fail">Đăng nhập thất bại</string>
+    <string name="msg_unkown_error">Lỗi không xác định</string>
+    <string name="err_not_found">Không tìm thấy</string>
+    <string name="invalid_qr">Mã QR không hợp lệ</string>
+    <string name="id_city">Tỉnh/Thành Phố</string>
+    <string name="id_district">Quận/Huyện</string>
+    <string name="id_street">Đường</string>
+    <string name="trial_expired">Hết hạn dùng thử</string>
+    <string name="add_new_device">Thêm mới tủ</string>
+    <string name="add_new_device_success">Thêm tủ thành công</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="msg_not_match_password">Xác nhận mật khẩu không khớp</string>
+    <string name="err_conflict">Đã tồn tại</string>
+    <string name="err_server">Lỗi máy chủ</string>
+    <string name="err_bidden">Yêu cầu bị từ chối</string>
+    <string name="err_unauthorize">Phiên làm việc đã kết thúc</string>
+    <string name="hint_phone">Số điện thoại</string>
+    <string name="msg_invalid_phone">Số điện thoại không phù hợp</string>
+
+    <!--    <string name="device_name_demo">BDU 192.168.0.1 Hồ Chí Minh</string>-->
+    <!--    <string name="location_demo">Tân Bình, Hồ Chí Minh</string>-->
+    <!--    <string name="full_name_demo">Nguyễn Văn A</string>-->
+    <!--    <string name="time_demo">10:30</string>-->
+    <!--    <string name="time_ap_demo">AM</string>-->
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="SystemInfoComponent">
+        <attr name="numberSys" format="integer" />
+        <attr name="desc" format="string" />
+        <attr name="time" format="string" />
+        <attr name="descColor" format="color" />
+    </declare-styleable>
+</resources>

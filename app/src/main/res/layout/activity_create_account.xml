@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_create_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main"
+    tools:context=".CreateAccountActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_80"
+            android:layout_marginBottom="@dimen/space_80"
+            android:text="@string/create_account"
+            android:textAlignment="center"
+            android:textColor="@color/main_blue"
+            android:textSize="@dimen/text_size_24"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/et_new_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_38"
+            android:layout_marginTop="@dimen/space_35"
+            android:autofillHints="@string/hint_email"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_fullname"
+            android:drawablePadding="@dimen/space_tiny_6"
+            android:hint="@string/hint_full_name"
+            android:inputType="text"
+            android:paddingStart="@dimen/space_tiny_6"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/et_new_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_38"
+            android:layout_marginTop="@dimen/space_20"
+            android:autofillHints="@string/hint_email"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_icon_mail"
+            android:drawablePadding="@dimen/space_tiny_6"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/space_tiny_6"
+            android:textSize="@dimen/text_size_14" />
+        <EditText
+            android:id="@+id/et_new_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_38"
+            android:layout_marginTop="@dimen/space_20"
+            android:autofillHints="@string/hint_email"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="@dimen/space_tiny_6"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:paddingStart="@dimen/space_tiny_6"
+            android:textSize="@dimen/text_size_14" />
+        <EditText
+            android:id="@+id/et_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_38"
+            android:layout_marginTop="@dimen/space_20"
+            android:autofillHints="@string/hint_password"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_icon_padlock"
+            android:drawablePadding="@dimen/space_tiny_6"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/space_tiny_6"
+            android:textSize="@dimen/text_size_14" />
+        <EditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height_38"
+            android:layout_marginTop="@dimen/space_20"
+            android:autofillHints="@string/hint_password"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_icon_padlock"
+            android:drawablePadding="@dimen/space_tiny_6"
+            android:hint="@string/hint_confirm_password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/space_tiny_6"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+        <ImageView
+            android:id="@+id/img_new_success"
+            android:layout_width="@dimen/img_size_40"
+            android:layout_height="@dimen/img_size_40"
+            android:src="@drawable/ic_success"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_new_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginBottom="@dimen/layout_bottom_height_120"
+            />
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_bottom_height_120"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_50"
+            android:paddingRight="@dimen/space_50"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/bt_create_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height_38"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_button"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/arrow"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/ic_arrow_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/space_tiny_10"
+                    android:gravity="center"
+                    android:text="@string/create_account"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/bt_text"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_create_account"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sign_in"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/main_blue"
+                android:textSize="@dimen/text_size_12"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_tiny_3"
+    android:layout_marginBottom="@dimen/space_tiny_3"
+    android:background="@drawable/bg_tbl_row"
+    android:paddingTop="@dimen/space_tiny_6">
+
+    <TextView
+        android:id="@+id/row_id"
+        android:layout_width="@dimen/tbl_width_30"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingStart="@dimen/space_tiny_3"
+        android:paddingEnd="@dimen/space_tiny_3"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="normal"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/row_time"
+        android:layout_width="@dimen/tbl_width_92"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="@dimen/tbl_width_40"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/row_select"
+            android:layout_width="@dimen/sel_width_25"
+            android:layout_height="@dimen/sel_width_25"
+            android:background="@drawable/ic_checkbox_unselected"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+
+
+</TableRow>

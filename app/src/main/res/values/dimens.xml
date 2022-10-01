@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="layout_bottom_height_120">120dp</dimen>
+    <dimen name="system_info_height">110dp</dimen>
+    <dimen name="bt_height_50">45dp</dimen>
+    <dimen name="text_height_38">38dp</dimen>
+    <dimen name="top_height_38">38dp</dimen>
+    <dimen name="bt_height_35">30dp</dimen>
+    <dimen name="note_min_height">200dp</dimen>
+
+    <dimen name="width_110">110dp</dimen>
+    <dimen name="width_90">100dp</dimen>
+    <dimen name="sel_width_25">22dp</dimen>
+    <dimen name="tbl_width_30">32dp</dimen>
+    <dimen name="tbl_width_40">40dp</dimen>
+    <dimen name="tbl_width_50">50dp</dimen>
+    <dimen name="tbl_width_92">83dp</dimen>
+
+    <dimen name="img_size_40">60dp</dimen>
+    <dimen name="img_size_120">160dp</dimen>
+
+    <dimen name="space_80">70dp</dimen>
+    <dimen name="space_50">50dp</dimen>
+    <dimen name="space_35">35dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="space_tiny_10">10dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_tiny_6">6dp</dimen>
+    <dimen name="space_tiny_3">3dp</dimen>
+
+    <!--    font size-->
+    <dimen name="text_size_28">29sp</dimen>
+    <dimen name="text_size_24">25sp</dimen>
+    <dimen name="text_size_18">19sp</dimen>
+    <dimen name="text_size_16">17sp</dimen>
+    <dimen name="text_size_14">15sp</dimen>
+    <dimen name="text_size_12">13sp</dimen>
+    <dimen name="text_size_10">11sp</dimen>
+
+</resources>
